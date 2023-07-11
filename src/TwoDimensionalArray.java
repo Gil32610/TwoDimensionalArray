@@ -52,6 +52,14 @@ public class TwoDimensionalArray {
         }
         System.out.println("Value not found");
     }
+    public void deleteValue(int rowIndex, int columIndex){
+    try{
+        System.out.println("Deleting " + array[rowIndex][columIndex]+ " from row# " + rowIndex + " column# " + columIndex);
+        array[rowIndex][columIndex] = Integer.MIN_VALUE;
+    }catch(ArrayIndexOutOfBoundsException e){
+        System.out.println("Cannot access index");
+    }
+    }
 
     public int[][] getArray() {
         return array;

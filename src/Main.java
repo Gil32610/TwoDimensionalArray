@@ -27,5 +27,9 @@ public class Main {
         tda.traverse();
 
         tda.searchValue(4);
+
+        tda.deleteValue(3,2);
+
+        tda.traverse();
     }
 }
