@@ -25,5 +25,7 @@ public class Main {
         tda.accessCell(4,4);
 
         tda.traverse();
+
+        tda.searchValue(4);
     }
 }

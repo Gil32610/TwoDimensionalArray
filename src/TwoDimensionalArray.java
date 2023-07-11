@@ -41,6 +41,18 @@ public class TwoDimensionalArray {
         }
     }
 
+    public void searchValue(int value){
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[0].length; j++) {
+                if(array[i][j] == value) {
+                    System.out.printf("Value %d located at row %d column %d%n",value,i,j);
+                    return;
+                }
+            }
+        }
+        System.out.println("Value not found");
+    }
+
     public int[][] getArray() {
         return array;
     }
