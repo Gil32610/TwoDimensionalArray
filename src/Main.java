@@ -13,5 +13,13 @@ public class Main {
     //All together
         String s2DArray[][] = { {"Lisa Lisa", "Zeppelli"},{"SpeedWagon","JoeStar"}}; //Takes O(1) time complexity
         System.out.println(Arrays.deepToString(s2DArray));
+
+        TwoDimensionalArray tda = new TwoDimensionalArray(5,5);
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                tda.insertValue(i,j,j);
+            }
+        }
+        System.out.println(Arrays.deepToString(tda.getArray()));
     }
 }
