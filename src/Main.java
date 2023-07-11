@@ -21,5 +21,7 @@ public class Main {
             }
         }
         System.out.println(Arrays.deepToString(tda.getArray()));
+
+        tda.accessCell(4,4);
     }
 }

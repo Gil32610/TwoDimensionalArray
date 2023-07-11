@@ -22,6 +22,15 @@ public class TwoDimensionalArray {
         }
     }
 
+    public void accessCell(int rowIndex,int columnIndex){
+        System.out.printf("Accessing row #%d and column #%d%n",rowIndex,columnIndex);
+        try{
+            System.out.println("Cell value is: " + array[rowIndex][columnIndex]);
+        }catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("Cannot access index");
+        }
+    }
+
     public int[][] getArray() {
         return array;
     }
